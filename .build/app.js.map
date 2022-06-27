@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../app.js"],
+  "sourcesContent": ["let button = document.getElementById('button');\nlet input1 = document.getElementById('input1');\nlet input2 = document.getElementById('input2');\n\n\nfunction somarNumeros(numero1, numero2) {\n  return numero1 + numero2\n}\n\nbutton.addEventListener('click', () => {\n  console.log(somarNumeros(input1.value, input2.value));\n})"],
+  "mappings": "AAAA,IAAI,SAAS,SAAS,eAAe;AACrC,IAAI,SAAS,SAAS,eAAe;AACrC,IAAI,SAAS,SAAS,eAAe;AAGrC,sBAAsB,SAAS,SAAS;AACtC,SAAO,UAAU;AAAA;AAGnB,OAAO,iBAAiB,SAAS,MAAM;AACrC,UAAQ,IAAI,aAAa,OAAO,OAAO,OAAO;AAAA;",
+  "names": []
+}
