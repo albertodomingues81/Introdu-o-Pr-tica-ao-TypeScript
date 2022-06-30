@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../exemplos/exemplo-ts.ts"],
+  "sourcesContent": ["let button = document.getElementById('button');\nlet input1 = document.getElementById('input1') as HTMLInputElement;\nlet input2 = document.getElementById('input2') as HTMLInputElement;\n\nfunction adicionarNumero(numero1: number, numero2: number, devePrintar: boolean, frase: string) {\n  let resultado = numero1 + numero2\n  if (devePrintar) {\n    console.log(frase + resultado)\n  }\n  return numero1 + numero2\n}\n\nlet devePrintar = true;\nlet frase: string;\nfrase = 'O valor \u00E9: '\n\n\nif (button) {\n  button.addEventListener('click', () => {\n    if (input1 && input2){\n      console.log(adicionarNumero(Number(input1.value), Number(input2.value), devePrintar, frase));\n    }\n\n  })\n  \n}\n\n"],
+  "mappings": "AAAA,IAAI,SAAS,SAAS,eAAe;AACrC,IAAI,SAAS,SAAS,eAAe;AACrC,IAAI,SAAS,SAAS,eAAe;AAErC,yBAAyB,SAAiB,SAAiB,cAAsB,QAAe;AAC9F,MAAI,YAAY,UAAU;AAC1B,MAAI,cAAa;AACf,YAAQ,IAAI,SAAQ;AAAA;AAEtB,SAAO,UAAU;AAAA;AAGnB,IAAI,cAAc;AAClB,IAAI;AACJ,QAAQ;AAGR,IAAI,QAAQ;AACV,SAAO,iBAAiB,SAAS,MAAM;AACrC,QAAI,UAAU,QAAO;AACnB,cAAQ,IAAI,gBAAgB,OAAO,OAAO,QAAQ,OAAO,OAAO,QAAQ,aAAa;AAAA;AAAA;AAAA;",
+  "names": []
+}
