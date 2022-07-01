@@ -1,14 +1,21 @@
-type input = number | string;
+let anyEstaDeVolta: any;
+anyEstaDeVolta = 3;
+anyEstaDeVolta = 'teste'
+anyEstaDeVolta = 5;
+
+let stringTest: string = 'verificar'
+stringTest = anyEstaDeVolta;
 
 
-function somarValores(input1: number | string, input2: number | string) {
-  if (typeof input1 === 'string' || typeof input2 === 'string') {
-    return input1.toString() + input2.toString();
-  } else {
-    return input1 + input2;
-  }
-} 
+let unknownValor: unknown;
+unknownValor = 3;
+unknownValor = 'opa';  
+unknownValor =  true;
+unknownValor = 'vai sim';
 
-console.log(somaValores(1, 5));
-console.log(somaValores('olá', ',tudo bem?'));
-console.log(somaValores('que dia é hoje? ', 5));
+let stringTest2: string = 'agora vai';
+stringTest2 = unknownValor;
+
+if (typeof unknownValor === 'string') {
+  stringTest2 = unknownValor;
+}
