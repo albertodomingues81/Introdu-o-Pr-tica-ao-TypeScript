@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../exemplos/tipos.ts"],
+  "sourcesContent": ["type input = number | string;\n\n\nfunction somarValores(input1: number | string, input2: number | string) {\n  if (typeof input1 === 'string' || typeof input2 === 'string') {\n    return input1.toString() + input2.toString();\n  } else {\n    return input1 + input2;\n  }\n} \n\nconsole.log(somaValores(1, 5));\nconsole.log(somaValores('ol\u00E1', ',tudo bem?'));\nconsole.log(somaValores('que dia \u00E9 hoje? ', 5));"],
+  "mappings": "AAGA,sBAAsB,QAAyB,QAAyB;AACtE,MAAI,OAAO,WAAW,YAAY,OAAO,WAAW,UAAU;AAC5D,WAAO,OAAO,aAAa,OAAO;AAAA,SAC7B;AACL,WAAO,SAAS;AAAA;AAAA;AAIpB,QAAQ,IAAI,YAAY,GAAG;AAC3B,QAAQ,IAAI,YAAY,UAAO;AAC/B,QAAQ,IAAI,YAAY,uBAAoB;",
+  "names": []
+}

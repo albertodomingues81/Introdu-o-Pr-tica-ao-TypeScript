@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../exemplos/any-unknown-never.ts"],
+  "sourcesContent": ["let anyEstaDeVolta: any;\nanyEstaDeVolta = 3;\nanyEstaDeVolta = 'teste'\nanyEstaDeVolta = 5;\n\nlet stringTest: string = 'verificar'\nstringTest = anyEstaDeVolta;\n\n\nlet unknownValor: unknown;\nunknownValor = 3;\nunknownValor = 'opa';  \nunknownValor =  true;\nunknownValor = 'vai sim';\n\nlet stringTest2: string = 'agora vai';\n\n\nif (typeof unknownValor === 'string') {\n  stringTest2 = unknownValor;\n}\n\nfunction jogaErro(erro: string, codigo: number): never {\n  throw (error, erro, code, codigo);\n  \n}\n\njogaErro('deu erro', 500)"],
+  "mappings": "AAAA,IAAI;AACJ,iBAAiB;AACjB,iBAAiB;AACjB,iBAAiB;AAEjB,IAAI,aAAqB;AACzB,aAAa;AAGb,IAAI;AACJ,eAAe;AACf,eAAe;AACf,eAAgB;AAChB,eAAe;AAEf,IAAI,cAAsB;AAG1B,IAAI,OAAO,iBAAiB,UAAU;AACpC,gBAAc;AAAA;AAGhB,kBAAkB,MAAc,QAAuB;AACrD,QAAO,OAAO,MAAM,MAAM;AAAA;AAI5B,SAAS,YAAY;",
+  "names": []
+}

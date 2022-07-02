@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../exemplos/any.ts"],
+  "sourcesContent": ["let valorAny: any;\nvalorAny = 3;\nvalorAny = 'ol\u00E1';\nvalorAny = true;   \n\nlet valorString: string = 'teste';\nvalorString = valorAny\nlet valorString2: string = 'testao';\nvalorString2 = valorAny;\n\nfunction somarString(string1: string, string2: string) {\n  console.log(string1 + string2);\n}\n\nsomarString(valorString, valorString2);\nsomarString('ol\u00E1 ', ',como vai?');"],
+  "mappings": "AAAA,IAAI;AACJ,WAAW;AACX,WAAW;AACX,WAAW;AAEX,IAAI,cAAsB;AAC1B,cAAc;AACd,IAAI,eAAuB;AAC3B,eAAe;AAEf,qBAAqB,SAAiB,SAAiB;AACrD,UAAQ,IAAI,UAAU;AAAA;AAGxB,YAAY,aAAa;AACzB,YAAY,WAAQ;",
+  "names": []
+}

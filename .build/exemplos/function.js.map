@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../exemplos/function.ts"],
+  "sourcesContent": ["function printaValoresNumericos(numero1: number, numero2: number): void {\n  console.log(numero1 + numero2)\n}\n\nfunction somarValoresNumericosETratar(numero1: number, numero2: number, callback: (numero: number) => number): number {\n  let resultado =  numero1 + numero2;\n  return callback(resultado);\n}\n\n\nfunction aoQuadrado(numero: number): number {\n  return numero = numero;\n}\n\nfunction dividirPorEleMesmo(numero: number): number {\n  return numero / numero\n}\n\nconsole.log(somarValoresNumericosETratar(1, 3, aoQuadrado))\nconsole.log(somarValoresNumericosETratar(1, 3, dividirPorEleMesmo))\n"],
+  "mappings": "AAAA,gCAAgC,SAAiB,SAAuB;AACtE,UAAQ,IAAI,UAAU;AAAA;AAGxB,sCAAsC,SAAiB,SAAiB,UAA8C;AACpH,MAAI,YAAa,UAAU;AAC3B,SAAO,SAAS;AAAA;AAIlB,oBAAoB,QAAwB;AAC1C,SAAO,SAAS;AAAA;AAGlB,4BAA4B,QAAwB;AAClD,SAAO,SAAS;AAAA;AAGlB,QAAQ,IAAI,6BAA6B,GAAG,GAAG;AAC/C,QAAQ,IAAI,6BAA6B,GAAG,GAAG;",
+  "names": []
+}
